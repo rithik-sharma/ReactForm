@@ -65,14 +65,14 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col items-center mt-8">
-      <div className="max-w-md w-full bg-purple-600 p-4 rounded-lg">
+    <div className="min-h-screen flex flex-col items-center bg-purple-300 ">
+      <div className=" mt-8 max-w-md w-full bg-purple-600 p-4 rounded-lg shadow-md">
         <h1 className="text-white text-2xl font-bold">Google Form</h1>
         <p className="text-white">Your responses are important to us.</p>
       </div>
       {isFormSubmitted ? (
         // Display edit response box
-        <div className="mt-8 p-4 border rounded-md bg-gray-100 shadow-md">
+        <div className="mt-8 p-4 max-w-md border rounded-md bg-gray-100 shadow-md">
           <p className="text-lg font-semibold mb-4">Response Submitted!</p>
           <ul className="list-disc pl-6">
             {Object.entries(submittedData).map(([key, value]) => (
@@ -93,7 +93,10 @@ function App() {
         </div>
       ) : (
         // Display the form
-        <form onSubmit={submitHandler} className=" mt-8 max-w-md w-full">
+        <form
+          onSubmit={submitHandler}
+          className=" mt-8 max-w-md w-full border rounded-md shadow-md p-4 bg-gray-100"
+        >
           <div className="mb-4">
             <label
               htmlFor="firstName"
@@ -370,6 +373,24 @@ function App() {
           </div>
         </form>
       )}
+
+      <div class=" mt-8 text-center py-4 bg-purple-800 text-white w-full">
+        <h2 class="text-lg">
+          Made with <span class="text-red-500">&hearts;</span>
+        </h2>
+        <h2 class="text-sm">
+          ©{" "}
+          <a
+            href="https://github.com/rithik-sharma"
+            rel="noreferrer"
+            target="_blank"
+            class="underline hover:text-red-500"
+          >
+            Rithik Sharma
+          </a>
+          . All rights reserved.
+        </h2>
+      </div>
     </div>
   );
 }
