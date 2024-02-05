@@ -141,7 +141,7 @@ function App() {
               type="email"
               name="email"
               id="email"
-              placeholder="shhrithik@gmail.com"
+              placeholder="example@gmail.com"
               value={formData.email}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
@@ -200,7 +200,7 @@ function App() {
               type="text"
               name="city"
               id="city"
-              placeholder="B-25C"
+              placeholder="city"
               value={formData.city}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
@@ -219,7 +219,7 @@ function App() {
               type="text"
               name="state"
               id="state"
-              placeholder="state name"
+              placeholder="State"
               value={formData.state}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
