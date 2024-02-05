@@ -72,25 +72,23 @@ function App() {
       </div>
       {isFormSubmitted ? (
         // Display edit response box
-        <div>
-          <div className="mt-8 p-4 border rounded-md bg-gray-100 shadow-md">
-            <p className="text-lg font-semibold mb-4">Response Submitted!</p>
-            <ul className="list-disc pl-6">
-              {Object.entries(submittedData).map(([key, value]) => (
-                <li key={key} className="mb-2">
-                  <strong className="font-semibold">{key}:</strong>{" "}
-                  {value.toString()}
-                </li>
-              ))}
-            </ul>
-            <div className="flex justify-end mt-4">
-              <button
-                className="bg-blue-500 text-white font-semibold rounded-md py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-600 hover:shadow-2xl transform hover:scale-105"
-                onClick={editResponse}
-              >
-                Edit Response
-              </button>
-            </div>
+        <div className="mt-8 p-4 border rounded-md bg-gray-100 shadow-md">
+          <p className="text-lg font-semibold mb-4">Response Submitted!</p>
+          <ul className="list-disc pl-6">
+            {Object.entries(submittedData).map(([key, value]) => (
+              <li key={key} className="mb-2">
+                <strong className="font-semibold">{key}:</strong>{" "}
+                {value.toString()}
+              </li>
+            ))}
+          </ul>
+          <div className="flex justify-end mt-4">
+            <button
+              className="bg-blue-500 text-white font-semibold rounded-md py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-600 hover:shadow-2xl transform hover:scale-105"
+              onClick={editResponse}
+            >
+              Edit Response
+            </button>
           </div>
         </div>
       ) : (
