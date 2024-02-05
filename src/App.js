@@ -364,7 +364,7 @@ function App() {
           </div>
 
           <div className="flex justify-end">
-            <button className="bg-blue-500 text-white font-semibold rounded-md py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-600 hover:shadow-2xl transform hover:scale-105">
+            <button className="bg-purple-500 text-white font-semibold rounded-md py-2 px-4 transition duration-300 ease-in-out hover:bg-purple-600 hover:shadow-2xl transform hover:scale-105">
               Submit
             </button>
           </div>
