@@ -107,7 +107,7 @@ function App() {
               type="text"
               name="firstName"
               id="firstName"
-              placeholder="Love"
+              placeholder="first name"
               value={formData.firstName}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
@@ -125,7 +125,7 @@ function App() {
               type="text"
               name="lastName"
               id="lastName"
-              placeholder="Babbar"
+              placeholder="last name"
               value={formData.lastName}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
@@ -143,7 +143,7 @@ function App() {
               type="email"
               name="email"
               id="email"
-              placeholder="love@abcd.com"
+              placeholder="shhrithik@gmail.com"
               value={formData.email}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
@@ -221,7 +221,7 @@ function App() {
               type="text"
               name="state"
               id="state"
-              placeholder="Bihar"
+              placeholder="state name"
               value={formData.state}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
@@ -240,7 +240,7 @@ function App() {
               type="text"
               name="postalCode"
               id="postalCode"
-              placeholder="110077"
+              placeholder="247667"
               value={formData.postalCode}
               onChange={changeHandler}
               className="mt-1 p-2 border rounded w-full"
